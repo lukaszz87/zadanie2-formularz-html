@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+</head>
+
+<body>
+    <form action="https://formspree.io/l.zlotorzynski@gmail.com" method="post">FORMULARZ ZAPISU NA SZKOLENIE</form><br />
+    <label for="firstname">Imię:</label><br />
+    <input type="text" name="imie" id="firstname" value="Imię" size="40"><br />
+
+    <label for="lastname">Nazwisko:</label><br />
+    <input type="text" name="nazwisko" id="lastname" value="Nazwisko" size="40"><br />
+
+    <label for="email">Adres e-mail:</label><br />
+    <input type="email" name="email" id="email" value="Adres e-mail" size="40"><br />
+
+    <label for="tel">Nr telefonu:</label><br />
+    <input type="text" name="tel" pattern="[\+]\d{11,}" id="tel" size="40"><br />
+
+    <label for="city">Miasto:</label><br />
+    <select name="city" id="city">
+        <option value="gdansk">Gdańsk</option>
+        <option value="krakow">Kraków</option>
+        <option value="warszawa">Warszawa</option>
+    </select><br /> Płeć:
+
+    <br />
+    <input type="radio" name="gender" value="male"> Mężyczna<br />
+    <input type="radio" name="gender" value="female"> Kobieta<br />
+    <input type="radio" name="gender" value="other"> Inne<br /> Zgoda na przetwarzanie danych osobowych:<br />
+    <input type="radio" name="dane-osobowe" value="Wyrażam zgodę">Wyrażam zgodę<br />
+    <input type="radio" name="dane-osobowe" value="Nie wyrażam zgody">Nie wyrażam zgody<br /> Uwagi:
+
+    <br />
+    <textarea rows="10" cols="40" maxlength="100"></textarea><br />
+    <input type="submit" value="Wyślij">
+
+</body>
+
+</html>
